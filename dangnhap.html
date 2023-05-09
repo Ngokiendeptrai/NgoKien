@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">   
+    <link rel="stylesheet" href="dangnhap.css">
+
+<head>
+    <header>
+    
+        <img src="img/logo.webp" width="90px" height="45px"  >
+        <nav>
+          <ul>
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="BIGBALLCHUNKY.html">BIGBALL CHUNKY</a></li>
+            <li><a href="mule.html">MULE</a></li>
+            <li><a href="classic.html">DÉP</a></li>
+            <li><a href="tintuc.html">TIN-TUC</a></li>
+          </ul>
+        </nav>
+        <div>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-bars"></i>
+          <a href="dangnhap.html"><i class="fa-solid fa-user"></i></a>
+          <input type="text" class="search-bar" placeholder="Search">
+        </div>
+        
+        <script >
+          var searchIcon = document.querySelector('.fa-search');
+          var searchBar = document.querySelector('.search-bar');
+        
+          searchIcon.addEventListener('click', function() {
+            searchBar.style.display = 'block';
+          });
+        </script>
+       </header>
+       <div class="dangnhap">
+        <h2>Đăng Nhập</h2>
+        <form id="login-form">  
+          <div class="form-group">
+            <label for="username">Tài khoản:</label>
+            <input type="text" id="username" name="username">
+            <div id="username-error" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password">
+            <div id="password-error" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <button type="submit">Đăng Nhập</button>
+            <p class="signup">Bạn chưa có tài khoản? <a href="dangky.html">Đăng ký</a></p>
+              
+          </div>
+        </form>
+      </div>
+    <footer>
+        <div class="dangky">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About MLB</h4>
+              <p>MLB is a footwear company that offers a wide range of sneakers, boots, and sandals for men, women, and kids.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <ul>
+                <li><i class="fa fa-phone"></i> +1-800-MLB-HELP</li>
+                <li><i class="fa fa-envelope"></i> support@mlb.com</li>
+                <li><i class="fa fa-map-marker"></i> 123 Main St, New York, NY 10001</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Follow Us</h4>
+              <ul class="social">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+     <link rel="stylesheet" href="jsjs.js">
+     <script src="jsjs.js"></script>
+     
+    
+     
+      
+      
+      
+
+</body>
+</html>

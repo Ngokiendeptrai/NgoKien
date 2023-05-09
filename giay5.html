@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chi tiết sản phẩm giày</title>
+	<link rel="stylesheet" type="text/css" href="css2.css">
+  <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.webp" width="90px" height="45px" >
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="BIGBALLCHUNKY.html">BIGBALL CHUNKY</a></li>
+            <li><a href="mule.html">MULE</a></li>
+            <li><a href="classic.html">DÉP</a></li>
+            <li><a href="tintuc.html">TIN-TUC</a></li>
+          </ul>
+        </nav>
+        <div>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-bars"></i>
+          <a href="dangnhap.html"><i class="fa-solid fa-user"></i></a>
+          <input type="text" class="search-bar" placeholder="Search">
+        </div>
+        
+        <script>
+          var searchIcon = document.querySelector('.fa-search');
+          var searchBar = document.querySelector('.search-bar');
+        
+          searchIcon.addEventListener('click', function() {
+            searchBar.style.display = 'block';
+          });
+        </script>
+      </header>
+      <div class="anh1">
+        <img src="img/slider_3.webp" width="1500px" height="320px" style="max-width: 100%;" alt="">
+
+      </div>
+      
+	<div class="container">
+        <div class="product-image">
+            <img src="img/giay5.webp" alt="Product Image" id="product-image" width="665px" height="566px">
+            <div class="image-selector">
+              <button class="image-button" onclick="changeImage('img/giay5.webp')">></button>
+              <button class="image-button2" onclick="changeImage('img/5.1.webp')"><</button>
+              
+            </div>
+            <script>
+            function changeImage(image) {
+                document.getElementById('product-image').src = image;
+              }
+            </script>
+              
+          </div>
+        <div class="product-details">
+          <h1>Giày MLB Chunky-Liner High New York Yankees D.Navy</h1>
+          <p><strong>Mã sản phẩm:</strong>3ASXCB12N-50NYD</p>
+          <div class="price">3.990.000 VND</div>
+          <div class="size">
+            <label for="size">Size:</label>
+            <select id="size">
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+            </select>
+          </div>
+          <p><strong>Thông tin sản phẩm:</strong></p>
+          <ul>
+            <li>Xuất Xứ: MLB-Korea</li>
+            
+            <li>Thương hiệu: MLB</li>
+            <li>Xuất Xứ:	MLB-Korea</li>
+            <li>Ra Mắt:	2022.11.</li>
+          </ul>
+          <button class="btn">Thêm vào giỏ hàng</button>
+          <br>
+          <button class="btn">Mua Hang</button>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About MLB</h4>
+              <p>MLB is a footwear company that offers a wide range of sneakers, boots, and sandals for men, women, and kids.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <ul>
+                <li><i class="fa fa-phone"></i> +1-800-MLB-HELP</li>
+                <li><i class="fa fa-envelope"></i> support@mlb.com</li>
+                <li><i class="fa fa-map-marker"></i> 123 Main St, New York, NY 10001</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Follow Us</h4>
+              <ul class="social">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
